@@ -18,12 +18,16 @@ export function Navbar() {
         </nav>
 
         <div className="flex items-center gap-4">
-          <Button variant="secondary" size="sm" className="hidden sm:flex">
-            Student Login
-          </Button>
-          <Button size="sm">
-            Institute Partner
-          </Button>
+          <Link href="/login">
+            <Button variant="secondary" size="sm" className="hidden sm:flex">
+              Student Login
+            </Button>
+          </Link>
+          <Link href="/signup">
+            <Button size="sm">
+              Institute Partner
+            </Button>
+          </Link>
         </div>
       </div>
     </header>
